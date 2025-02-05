@@ -1,7 +1,5 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  distDir: "build",
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
@@ -39,6 +37,6 @@ const nextConfig: NextConfig = {
     }
     return config
   },
-};
+}
 
-export default nextConfig;
+module.exports = nextConfig
