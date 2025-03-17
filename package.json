@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "npm run build && npx serve@latest out",
+    "lint": "next lint",
+    "deploy": "npm run build && wrangler pages deploy out"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
